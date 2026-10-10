@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>For Avika ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="hearts"></div>
+
+<section class="page active" id="lock">
+  <div class="card lock-card">
+    <div class="sparkle">✦</div>
+    <p class="eyebrow">A LITTLE SURPRISE FOR</p>
+    <h1>Avika</h1>
+    <p class="muted">There is something waiting for you inside…</p>
+    <div class="password-row">
+      <input id="password" type="password" placeholder="Enter password" autocomplete="off">
+      <button id="unlock">Open ✨</button>
+    </div>
+    <p id="error" class="error"></p>
+    <small>Hint: a special nickname 😉</small>
+  </div>
+</section>
+
+<main id="site" class="hidden">
+  <nav>
+    <button data-go="1">Home</button>
+    <button data-go="2">4 Years</button>
+    <button data-go="3">Gallery</button>
+    <button data-go="4">For You</button>
+    <button data-go="5">Surprise</button>
+  </nav>
+
+  <section class="page" data-page="1">
+    <div class="hero">
+      <p class="eyebrow">18 OCTOBER</p>
+      <h2>Happy Birthday,<br><span>Avika! 🎂</span></h2>
+      <p>Four years of friendship, countless conversations, random moments and memories worth keeping.</p>
+      <button class="primary" data-go="2">Start the surprise →</button>
+    </div>
+  </section>
+
+  <section class="page" data-page="2">
+    <div class="content">
+      <p class="eyebrow">A LITTLE LOOK BACK</p>
+      <h2>4 Years of Friendship 🫶</h2>
+      <div class="timeline">
+        <article><b>01</b><h3>It all started</h3><p>Somehow, a friendship that was supposed to be ordinary became a part of everyday life.</p></article>
+        <article><b>02</b><h3>Then came the memories</h3><p>Random talks, jokes, annoying moments and those conversations that somehow never seemed to end.</p></article>
+        <article><b>03</b><h3>Four years later</h3><p>Different days, different situations—but the friendship is still here.</p></article>
+        <article><b>04</b><h3>And this is just the beginning</h3><p>There are still plenty of laughs, stories and memories left to make.</p></article>
+      </div>
+      <button class="primary" data-go="3">See the memories →</button>
+    </div>
+  </section>
+
+  <section class="page" data-page="3">
+    <div class="content">
+      <p class="eyebrow">MEMORIES</p>
+      <h2>A Little Gallery 📸</h2>
+      <p class="muted">Add Avika's photos to the <b>assets</b> folder and edit the filenames in this page if needed.</p>
+      <div class="gallery">
+        <figure><img src="assets/photo1.jpg" alt="Avika memory"><figcaption>One of those moments ✨</figcaption></figure>
+        <figure><img src="assets/photo2.jpg" alt="Avika memory"><figcaption>Keep smiling ❤️</figcaption></figure>
+        <figure><img src="assets/photo3.jpg" alt="Avika memory"><figcaption>A memory worth keeping</figcaption></figure>
+        <figure><img src="assets/photo4.jpg" alt="Avika memory"><figcaption>Just being you 🌷</figcaption></figure>
+        <figure><img src="assets/photo5.jpg" alt="Avika memory"><figcaption>More memories to come</figcaption></figure>
+        <figure><img src="assets/photo6.jpg" alt="Avika memory"><figcaption>18 October 🎂</figcaption></figure>
+      </div>
+      <button class="primary" data-go="4">One more thing →</button>
+    </div>
+  </section>
+
+  <section class="page" data-page="4">
+    <div class="content letter">
+      <p class="eyebrow">JUST FOR YOU</p>
+      <h2>Read this properly. 💌</h2>
+      <div class="letter-card">
+        <p>Avika,</p>
+        <p><b>Ek baat hamesha yaad rakhna—kisi bhi cheez ki unnecessary tension mat liya kar.</b></p>
+        <p>Jo cheezein tumhare control mein hain, unke liye effort karo; aur jo control mein nahi hain, unhe thoda waqt de do.</p>
+        <p>Life ko har waqt seriously lene ki zarurat nahi hai. Chhoti-chhoti cheezon mein khushiyan dhoondo, apne favourite logon ke saath time spend karo, haso, memories banao… aur <b>life ko sirf guzaarna nahi, khul ke jeena.</b> ❤️</p>
+        <p>Apni smile kabhi mat khona. Aur haan—4 saal ho gaye hain, abhi toh bahut saari memories baaki hain. 🫶</p>
+        <p class="sign">— From someone who has been your friend for these 4 years ✨</p>
+      </div>
+      <button class="primary" data-go="5">Open your gift 🎁</button>
+    </div>
+  </section>
+
+  <section class="page" data-page="5">
+    <div class="gift-wrap">
+      <p class="eyebrow">THE FINAL SURPRISE</p>
+      <h2>Something for you… 🎁</h2>
+      <div id="gift" class="gift" role="button" tabindex="0" aria-label="Open gift">
+        <div class="lid"></div><div class="box"></div><div class="ribbon-v"></div><div class="ribbon-h"></div>
+      </div>
+      <p id="giftHint">Tap the gift to open it</p>
+      <div id="reveal" class="reveal hidden">
+        <h3>🎉 HAPPY BIRTHDAY, AVIKA! 🎉</h3>
+        <p>Keep smiling. Keep growing. Keep enjoying the little things.</p>
+        <p>And remember: <b>life is meant to be lived. ❤️</b></p>
+        <p class="big">18 • 10 • Always a good day to celebrate you ✨</p>
+      </div>
+      <button class="music" id="musicBtn">🎵 Music: Off</button>
+    </div>
+  </section>
+</main>
+
+<audio id="music" loop preload="auto">
+  <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+<script src="script.js"></script>
+</body>
+</html>
